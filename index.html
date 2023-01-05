@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tower runner🏃🏻‍♀️🏃🏻‍♂️</title>
+    <meta name="description" content="Entity-Component - Registry">
+
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script
+        src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+
+</head>
+
+<body>
+    <a-scene>
+
+        <a-entity environment="preset:threetowers"></a-entity>
+
+        <!-- Camera -->
+        <a-entity camera  wasd-controls position="-3 1.6 7"></a-entity>
+
+
+
+        <!-- Platform -->
+        <a-box position="-3 -0.2 1" width="4" height="0.5" depth="100"></a-box>
+
+        <!-- Player -->
+        <a-entity id="player">
+            <a-sphere radius="0.4" position="-3 0.7 5.3" color="#330000">
+            </a-sphere>
+        </a-entity>
+        </a-entity>
+
+
+
+    </a-scene>
+</body>
+
+</html>
